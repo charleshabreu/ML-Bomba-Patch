@@ -1,0 +1,8 @@
+LIGA X1 BOMBA PATCH 2007 - app para iPhone
+
+1) Descompacte esta pasta (no iPhone: toque no arquivo .zip no app Arquivos).
+2) Publique todos os arquivos numa hospedagem gratuita (ex.: GitHub Pages).
+3) Abra o endereço publicado no Safari do iPhone.
+4) Toque em Compartilhar > Adicionar à Tela de Início.
+
+Os dados ficam salvos no aparelho. Para trocar de aparelho, use Regras > Gerar backup.

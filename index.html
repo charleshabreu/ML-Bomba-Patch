@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#072b1a">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Liga X1">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icon-192.png">
+<title>Liga X1 Bomba Patch 2007</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b3d26;--bg2:#0e4a2d;--card:#f4faf6;--ink:#12261b;--dark:#072b1a;--gold:#f2c230;--blue:#4aa3ff;--green:#3ddc84;--red:#e5483a;--mut:#6b7b72;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+*{box-sizing:border-box}
+body{margin:0;min-height:100%;background:var(--bg) repeating-linear-gradient(0deg,var(--bg2) 0 46px,var(--bg) 46px 92px);color:#fff;font:14px/1.4 Inter,system-ui,sans-serif;padding-bottom:84px}
+.wm{position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 50% 50%,transparent 0 76px,rgba(255,255,255,.1) 76px 78px,transparent 78px),linear-gradient(transparent calc(50% - 1px),rgba(255,255,255,.1) calc(50% - 1px) calc(50% + 1px),transparent calc(50% + 1px))}
+.wm::after{content:"⚽";position:absolute;right:-40px;bottom:60px;font-size:240px;opacity:.06}
+main{position:relative;max-width:760px;margin:0 auto;padding:0 12px 12px}
+header{background:var(--dark);border-bottom:3px solid var(--gold);padding:14px 16px;margin:0 -12px 12px}
+h1{margin:0;font:700 22px Oswald,Impact,sans-serif;letter-spacing:.06em;text-transform:uppercase}
+h1 small{display:block;font:500 11px Inter,sans-serif;color:var(--gold);letter-spacing:.04em}
+h2{font:700 15px Oswald,sans-serif;letter-spacing:.08em;text-transform:uppercase;margin:16px 0 8px;color:var(--gold)}
+.card{background:var(--card);color:var(--ink);border-radius:12px;padding:12px;margin-bottom:10px;overflow-x:auto}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.sc{border-radius:12px;padding:12px;color:#fff;text-align:center}
+.sc.c{background:#1f4e79}.sc.l{background:#2e6b3a}
+.sc b{display:block;font:700 12px Oswald,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.sc .v{font:700 20px Oswald,sans-serif;margin:4px 0;color:var(--gold)}.sc small{opacity:.85;font-size:11px}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th{background:#14573a;color:#fff;padding:5px 6px;font-size:11px;text-align:center}
+td{padding:5px 6px;border-bottom:1px solid #d2e2d8;text-align:center}
+td.n{text-align:left;font-weight:600}.pos{color:#1b7f46;font-weight:700}.neg{color:var(--red);font-weight:700}
+input,select,button{font:inherit;border-radius:8px;border:1px solid #b9cfc0;padding:7px 8px;background:#fff;color:var(--ink)}
+input.g{width:46px;text-align:center;background:#fff9c4;font-weight:700}
+button{background:var(--gold);color:var(--dark);font-weight:700;border:0;cursor:pointer}
+button.s{padding:4px 8px;font-size:11px}button.c{background:#1f4e79;color:#fff}button.l{background:#2e6b3a;color:#fff}button.x{background:#e8d5d2;color:#8a2a20}
+.row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}.row>*{flex:1;min-width:90px}
+.pl{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid #d2e2d8}.pl:last-child{border:0}
+.pl .i{flex:1;min-width:0}.pl .i b{display:block}.pl .i span{font-size:11px;color:var(--mut)}
+.lv{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font:700 13px Oswald;color:var(--dark);flex:none}
+.o{font:700 14px Oswald;min-width:28px;text-align:center}.p{font-size:11px;font-weight:700;white-space:nowrap}
+.tag{font-size:10px;padding:1px 6px;border-radius:9px;color:#fff;background:var(--mut)}
+nav{position:fixed;left:0;right:0;bottom:0;background:var(--dark);border-top:3px solid var(--gold);display:flex;padding-bottom:env(safe-area-inset-bottom,0px)}
+nav button{flex:1;background:none;color:#cfe8d8;border-radius:0;padding:10px 2px;font-size:11px}nav button.on{color:var(--gold)}
+nav button i{display:block;font-style:normal;font-size:18px}
+.mut{color:var(--mut);font-size:11px}.sep td{background:#14573a;color:#fff;font:700 11px Oswald;letter-spacing:.1em;text-align:left}
+ul.r{margin:6px 0;padding-left:18px}ul.r li{margin:3px 0}textarea{width:100%;min-height:70px;font:11px monospace}
+</style></head><body><div class="wm"></div>
+<main><header><h1>Liga X1 · Bomba Patch 2007<small>Charles × Lucas — gerenciador da disputa</small></h1></header><div id="v"></div></main>
+<nav id="nv"></nav>
+<script>
+const RAW=`GK|A|Petr Čech|Chelsea FC|GK|91|93|92|87
+GK|A|Dida|AC Milan|GK|85|87|88|83
+GK|B|Gianluigi Buffon|Juventus FC|GK|93|97|96|86
+GK|B|Edwin van der Sar|Manchester United|GK|89|90|89|84
+GK|C|Iker Casillas|Real Madrid|GK|92|94|97|82
+GK|C|Oliver Kahn|Bayern Munique|GK|90|92|90|88
+GK|D|Jens Lehmann|Arsenal FC|GK|87|89|88|83
+GK|D|Víctor Valdés|FC Barcelona|GK|84|86|85|82
+GK|E|Gregory Coupet|Olympique Lyonnais|GK|83|85|86|80
+GK|E|Francesco Toldo|Inter de Milão|GK|82|84|83|85
+DF|A|Alessandro Nesta|AC Milan|CB|94|97|88|80|76
+DF|A|Paolo Maldini|AC Milan|CB|93|96|85|76|81
+DF|A|Carles Puyol|FC Barcelona|CB|92|95|88|83|72
+DF|A|Rio Ferdinand|Manchester United|CB|91|94|90|82|74
+DF|A|Fabio Cannavaro|Real Madrid|CB|91|96|86|81|70
+DF|A|Lilian Thuram|FC Barcelona|CB|90|93|91|81|68
+DF|B|Roberto Carlos|Real Madrid / Fenerbahçe|LB|91|76|92|93|80
+DF|B|Javier Zanetti|Inter de Milão|RB|90|86|90|86|84
+DF|B|John Terry|Chelsea FC|CB|90|95|92|72|70
+DF|B|Cafu|AC Milan|RB|89|80|84|88|82
+DF|B|Gianluca Zambrotta|FC Barcelona|RB|88|82|84|87|81
+DF|B|Nemanja Vidić|Manchester United|CB|87|92|93|75|65
+DF|C|Lúcio|Bayern Munique|CB|87|88|91|84|75
+DF|C|Kakha Kaladze|AC Milan|CB|86|88|86|78|74
+DF|C|Sergio Ramos|Real Madrid|CB|86|87|86|84|75
+DF|C|Ricardo Carvalho|Chelsea FC|CB|86|89|84|79|72
+DF|C|Willy Sagnol|Bayern Munique|RB|85|82|80|81|86
+DF|C|Ashley Cole|Chelsea FC|LB|85|81|78|90|78
+DF|D|Marco Materazzi|Inter de Milão|CB|85|89|92|68|68
+DF|D|Patrice Evra|Manchester United|LB|84|79|76|88|78
+DF|D|Kolo Touré|Arsenal FC|CB|84|85|88|85|69
+DF|D|Daniel Alves|Sevilla FC|RB|84|74|78|89|83
+DF|D|Iván Córdoba|Inter de Milão|CB|84|86|82|92|65
+DF|D|Sami Hyypiä|Liverpool FC|CB|83|87|89|66|67
+DF|E|Gabriel Heinze|Manchester United / Real Madrid|CB|83|84|84|76|70
+DF|E|Marek Jankulovski|AC Milan|LB|82|75|78|83|80
+DF|E|Christian Chivu|AS Roma / Inter de Milão|CB|82|83|80|78|76
+DF|E|Luisão|SL Benfica|CB|82|85|90|69|64
+DF|E|Joan Capdevila|Deportivo / Villarreal|LB|81|76|78|80|77
+DF|E|Royston Drenthe|Feyenoord / Real Madrid|LB|80|68|75|91|74
+MF|A|Kaká|AC Milan|AM|95|88|94|87|85
+MF|A|Andrea Pirlo|AC Milan|CM|91|96|86|83|75
+MF|A|Steven Gerrard|Liverpool FC|CM|91|88|83|94|90
+MF|A|Frank Lampard|Chelsea FC|CM|91|89|81|92|85
+MF|A|Patrick Vieira|Inter de Milão|DM|91|85|78|84|96
+MF|A|Juninho Pernambucano|Olympique Lyonnais|AM|85|92|81|95|73
+MF|B|David Beckham|Real Madrid / LA Galaxy|RM|88|95|78|86|79
+MF|B|Michael Essien|Chelsea FC|DM|90|83|80|88|94
+MF|B|Luís Figo|Inter de Milão|RM|89|89|89|83|78
+MF|B|Deco|FC Barcelona|AM|89|91|87|84|80
+MF|B|Pavel Nedvěd|Juventus FC|LM|89|87|86|92|91
+MF|B|Clarence Seedorf|AC Milan|CM|89|90|88|91|91
+MF|C|Xavi Hernández|FC Barcelona|CM|90|95|88|76|76
+MF|C|Xabi Alonso|Liverpool FC|CM|87|94|78|84|82
+MF|C|Álvaro Recoba|Inter de Milão / Torino|AM|87|88|92|93|74
+MF|C|Daniele De Rossi|AS Roma|DM|87|84|76|85|90
+MF|C|Cesc Fàbregas|Arsenal FC|CM|87|92|85|78|75
+MF|C|Gennaro Gattuso|AC Milan|DM|86|74|65|62|92
+MF|C|Claude Makélélé|Chelsea FC|DM|84|78|72|58|88
+MF|D|Paul Scholes|Manchester United|CM|90|95|82|93|80
+MF|D|Dejan Stanković|Inter de Milão|CM|86|84|80|90|83
+MF|D|Andrés Iniesta|FC Barcelona|CM|85|89|90|72|72
+MF|D|Bastian Schweinsteiger|Bayern Munique|RM|85|85|84|82|84
+MF|D|Esteban Cambiasso|Inter de Milão|DM|85|83|78|76|85
+MF|D|Tomas Rosicky|Arsenal FC|AM|84|87|88|79|72
+MF|E|Marek Hamšík|SSC Napoli / Brescia|AM|82|83|81|78|75
+MF|E|Owen Hargreaves|Manchester United / Bayern|DM|82|78|75|76|86
+MF|E|Gilberto Silva|Arsenal FC|DM|82|79|70|68|85
+MF|E|Lucho González|FC Porto|CM|82|85|80|80|80
+MF|E|Kim Källström|Olympique Lyonnais|CM|81|84|76|85|82
+MF|E|Marcos Senna|Villarreal CF|DM|81|85|76|82|81
+FW|A|Ronaldinho Gaúcho|FC Barcelona|SA|97|98|87|91|89
+FW|A|Adriano Imperador|Inter de Milão|CF|96|90|99|88|98
+FW|A|Thierry Henry|FC Barcelona|CF|95|91|89|94|86
+FW|A|Ronaldo Fenômeno|AC Milan / Real Madrid|CF|94|96|93|91|87
+FW|A|Zlatan Ibrahimović|Inter de Milão|CF|92|95|90|84|95
+FW|A|Cristiano Ronaldo|Manchester United|RW|92|95|86|93|83
+FW|B|Samuel Eto’o|FC Barcelona|CF|93|89|90|95|84
+FW|B|Wayne Rooney|Manchester United|CF|92|86|92|88|93
+FW|B|Didier Drogba|Chelsea FC|CF|91|81|90|86|95
+FW|B|Ruud van Nistelrooy|Real Madrid|CF|91|82|91|83|86
+FW|B|Andriy Shevchenko|Chelsea FC|CF|90|84|89|86|82
+FW|B|Lionel Messi|FC Barcelona|RW|88|96|82|92|74
+FW|C|Francesco Totti|AS Roma|SA|91|89|93|79|88
+FW|C|Raúl González|Real Madrid|SA|89|86|86|81|79
+FW|C|Alessandro Del Piero|Juventus FC|SA|89|91|88|76|75
+FW|C|Robinho|Real Madrid|LW|88|97|78|90|70
+FW|C|David Trezeguet|Juventus FC|CF|87|72|89|79|83
+FW|C|Fernando Torres|Liverpool / Atl. Madrid|CF|87|84|85|90|82
+FW|D|Robin van Persie|Arsenal FC|CF|86|88|87|82|76
+FW|D|Filippo Inzaghi|AC Milan|CF|85|73|85|82|74
+FW|D|Michael Owen|Newcastle United|CF|85|82|86|89|72
+FW|D|Hernán Crespo|Inter de Milão|CF|85|78|88|80|85
+FW|D|Dimitar Berbatov|Tottenham Hotspur|CF|84|88|84|77|80
+FW|D|Diego Forlán|Villarreal / Atl. Madrid|CF|84|81|87|82|78
+FW|E|Nicolas Anelka|Bolton Wanderers|CF|84|84|82|87|77
+FW|E|Emmanuel Adebayor|Arsenal FC|CF|83|79|80|84|88
+FW|E|Dirk Kuyt|Liverpool FC|RW|83|77|81|80|85
+FW|E|Vincenzo Iaquinta|Juventus FC / Udinese|CF|82|75|82|83|83
+FW|E|Lukas Podolski|Bayern Munique|SA|82|80|86|85|76
+FW|E|Peter Crouch|Liverpool FC|CF|81|70|78|68|90`;
+const LV='ABCDE',PR={FW:[4.5e6,2.8e6,1.6e6,9e5,4.5e5],MF:[4.2e6,2.6e6,1.5e6,8e5,4e5],DF:[3.8e6,2.3e6,1.3e6,7.5e5,3.5e5],GK:[3.5e6,2e6,1.1e6,6.5e5,3e5]};
+const BR={FW:1.2e6,MF:9e5,DF:6e5,GK:3.5e5},GN={FW:'Atacantes',MF:'Meio-campistas',DF:'Defensores',GK:'Goleiros'};
+const AT={GK:['Defesa','Reflexo','Físico'],DF:['Defesa','Físico','Veloc.','Passe'],MF:['Passe','Drible','Chute','Físico'],FW:['Drible','Chute','Veloc.','Físico']};
+const LC={A:'#f2c230',B:'#c7ced6',C:'#d79a5b',D:'#5aa0e6',E:'#5cc8a1',BR:'#3ddc84'};
+const NM={C:'Charles',L:'Lucas'};
+const P=RAW.split('\n').map((l,i)=>{const a=l.split('|');return{i,g:a[0],l:a[1],n:a[2],c:a[3],p:a[4],o:+a[5],at:a.slice(6),pr:PR[a[0]][LV.indexOf(a[1])]}});
+const $=s=>document.querySelector(s),f=n=>(n<0?'−':'')+'R$ '+Math.abs(Math.round(n)).toLocaleString('pt-BR');
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const sg=n=>`<span class="${n<0?'neg':'pos'}">${n>0?'+':''}${f(n)}</span>`;
+let S={g:[],s:[],adj:{C:0,L:0}},tab='p',F={g:'',l:'',q:''};
+try{const x=localStorage.getItem('ligax1');if(x)S=Object.assign(S,JSON.parse(x))}catch(e){}
+const save=()=>{try{localStorage.setItem('ligax1',JSON.stringify(S))}catch(e){}};
+function calc(){
+ const z=()=>({r:0,v:0,e:0,d:0,gp:0,gc:0}),T={C:z(),L:z()},SE=[],rows=[];let sv={C:0,L:0},sd={C:0,L:0},pv=-1;
+ S.g.forEach((g,i)=>{const a=g&&g[0],b=g&&g[1];if(a==null||b==null){rows.push(null);return}
+  const se=Math.floor(i/10);if(se!==pv){sv={C:0,L:0};pv=se}if(!SE[se])SE[se]={n:0,C:z(),L:z()};SE[se].n++;
+  const o={};[['C',a,b],['L',b,a]].forEach(([k,gp,gc])=>{const r=gp>gc?'V':gp<gc?'D':'E';sv[k]=r==='V'?sv[k]+1:0;sd[k]=r==='D'?sd[k]+1:0;
+   const x=(r==='V'?1e5:r==='E'?4e4:0)+1e4*gp-5e3*gc+(gc===0?3e4:0)+(r==='V'&&gp-gc>=3?6e4:0)-(r==='D'&&gc-gp>=3?4e4:0)+(r==='V'&&sv[k]===3?8e4:0)-(r==='D'&&sd[k]===3?5e4:0);
+   o[k]=x;[T[k],SE[se][k]].forEach(t=>{t.r+=x;t[r.toLowerCase()]++;t.gp+=gp;t.gc+=gc})});rows.push(o)});
+ const DT={C:z(),L:z()};(S.d||[]).forEach(d=>[d.a,d.b].forEach(g=>{if(!g||g[0]==null||g[1]==null)return;[['C',g[0],g[1]],['L',g[1],g[0]]].forEach(([k,gp,gc])=>{const r=gp>gc?'V':gp<gc?'D':'E',x=(r==='V'?1e5:r==='E'?4e4:0)+1e4*gp-5e3*gc+(gc===0?3e4:0)+(r==='V'&&gp-gc>=3?6e4:0)-(r==='D'&&gc-gp>=3?4e4:0),t=DT[k];t.r+=x;t[r.toLowerCase()]++;t.gp+=gp;t.gc+=gc})}));
+ return{T,DT,rows,SE}}
+const act=k=>S.s.filter(s=>s.w===k&&!s.sold);
+function bal(k){const c=calc();let b=c.T[k].r+c.DT[k].r+(+S.adj[k]||0);S.s.filter(s=>s.w===k).forEach(s=>{b-=s.pr;if(s.sold)b+=s.pr/2});return b}
+const played=T=>T.v+T.e+T.d,aprov=t=>played(t)?Math.round(100*(3*t.v+t.e)/(3*played(t)))+'%':'—';
+const dres=d=>{const done=[d.a,d.b].every(g=>g&&g[0]!=null&&g[1]!=null),ag=[0,1].map(i=>((d.a&&d.a[i])||0)+((d.b&&d.b[i])||0));return{done,ag,w:!done?'':ag[0]>ag[1]?'C':ag[1]>ag[0]?'L':d.pen||''}};
+function view(){
+ const{T,DT,rows,SE}=calc(),el=$('#v');
+ if(tab==='p'){const B={C:bal('C'),L:bal('L')},M=k=>{const a=T[k],b=DT[k];return{v:a.v+b.v,e:a.e+b.e,d:a.d+b.d,gp:a.gp+b.gp,gc:a.gc+b.gc}};
+  const cn=k=>[act(k).filter(s=>s.lv==='A').length,act(k).filter(s=>s.lv!=='BR').length];
+  const st=(k)=>T[k];
+  const rw=(a,b,c)=>`<tr><td>${a}</td><td><b>${b}</b></td><td>${c}</td></tr>`;
+  el.innerHTML=`<div class=grid2>${['C','L'].map(k=>`<div class="sc ${k.toLowerCase()}"><b>${NM[k]}</b><div class=v>${f(B[k])}</div><small>saldo disponível</small></div>`).join('')}</div>
+  <h2>Comparativo</h2><div class=card><table><tr><th>Charles</th><th></th><th>Lucas</th></tr>
+  ${rw(played(M('C')),'Jogos (liga + disputas)',played(M('L')))}${rw(M('C').v,'Vitórias',M('L').v)}${rw(M('C').e,'Empates',M('L').e)}${rw(M('C').d,'Derrotas',M('L').d)}${rw(M('C').gp,'Gols feitos',M('L').gp)}${rw(M('C').gc,'Gols sofridos',M('L').gc)}${rw(aprov(M('C')),'Aproveit.',aprov(M('L')))}
+  ${rw(f(T.C.r),'Renda dos jogos',f(T.L.r))}${rw(f(DT.C.r),'Renda das disputas',f(DT.L.r))}${rw(cn('C')[0]+' / 2','Jogadores Nível A',cn('L')[0]+' / 2')}${rw(cn('C')[1]+' / 5','Estrangeiros',cn('L')[1]+' / 5')}</table></div>
+  <h2>Temporadas</h2><div class=card><table><tr><th>Temp.</th><th>Jogos</th><th>Charles</th><th>Lucas</th></tr>${SE.map((s,i)=>s?`<tr><td>${i+1}</td><td>${s.n}</td><td>${sg(s.C.r)}<br><span class=mut>${s.C.v}V ${s.C.e}E ${s.C.d}D</span></td><td>${sg(s.L.r)}<br><span class=mut>${s.L.v}V ${s.L.e}E ${s.L.d}D</span></td></tr>`:'').join('')||'<tr><td colspan=4 class=mut>Lance o primeiro placar na aba Jogos.</td></tr>'}</table></div>
+  <h2>Ajuste manual (R$)</h2><div class=card><div class=row><span>Charles <input type=number data-adj=C value="${S.adj.C||0}"></span><span>Lucas <input type=number data-adj=L value="${S.adj.L||0}"></span></div><span class=mut>Use para vendas de jogadores do elenco original ou correções (valor positivo soma, negativo desconta).</span></div>`}
+ else if(tab==='j'){const n=S.g.filter(g=>g&&g[0]!=null&&g[1]!=null).length;let h='<div class=card><table><tr><th>Jogo</th><th>Charles</th><th></th><th>Lucas</th><th>Ganho</th></tr>';
+  for(let i=0;i<=Math.min(n,99);i++){const g=S.g[i]||[null,null],r=rows[i];
+   if(i%10===0)h+=`<tr class=sep><td colspan=5>Temporada ${i/10+1}</td></tr>`;
+   h+=`<tr><td>${i+1}${(i+1)%5===0?' 🔓':''}</td><td><input class=g type=number min=0 data-g=${i} data-s=0 value="${g[0]??''}"></td><td>×</td><td><input class=g type=number min=0 data-g=${i} data-s=1 value="${g[1]??''}"></td><td style="text-align:left;font-size:11px">${r?'C '+sg(r.C)+'<br>L '+sg(r.L):'<span class=mut>—</span>'}</td></tr>`}
+  el.innerHTML=h+'</table></div><span class=mut>🔓 = janela de transferências aberta (a cada 5 jogos). Pênaltis contam como empate: lance o placar do tempo normal.</span>'}
+ else if(tab==='m'){el.innerHTML=`<h2>Brasileiro (Série A)</h2><div class=card><div class=row><input id=bn placeholder="Nome do jogador"><select id=bg>${Object.keys(BR).map(g=>`<option value=${g}>${GN[g]} — ${f(BR[g])}</option>`).join('')}</select></div><div class=row><button class=c data-br=C>Contratar p/ Charles</button><button class=l data-br=L>Contratar p/ Lucas</button></div></div>
+  <h2>Mercado europeu</h2><div class=row><input id=mq placeholder="Buscar jogador ou clube" value="${esc(F.q)}"><select id=mg><option value="">Posição</option>${Object.keys(GN).map(g=>`<option value=${g} ${F.g===g?'selected':''}>${GN[g]}</option>`).join('')}</select><select id=ml><option value="">Nível</option>${[...LV].map(l=>`<option ${F.l===l?'selected':''}>${l}</option>`).join('')}</select></div><div class=card id=ls></div>`;list()}
+ else if(tab==='d'){const fr=P.filter(p=>!S.s.find(s=>s.pid===p.i&&!s.sold)),inp=(i,lg,s)=>`<input class=g type=number min=0 data-dl=${i} data-lg=${lg} data-s=${s} value="${(S.d[i][lg]||[])[s]??''}">`;
+ el.innerHTML=`<h2>Nova disputa</h2><div class=card><div class=row><input id=dn list=dl placeholder="Jogador disputado"><datalist id=dl>${fr.map(p=>`<option value="${p.n}">`).join('')}</datalist><button data-nd=1>Abrir disputa</button></div><span class=mut>Ida e volta (1×1): lance o placar do tempo normal de cada jogo. Se o agregado empatar, os pênaltis decidem quem leva o jogador, mas o jogo vale como empate no dinheiro. Cada jogo vale dinheiro e entra nas estatísticas, mas não na temporada.</span></div><h2>Disputas</h2>${(S.d||[]).map((d,i)=>{const r=dres(d),p=d.pid!=null?P[d.pid]:null,tk=p&&S.s.find(s=>s.pid===p.i&&!s.sold);return`<div class=card><div class=pl><div class=i><b>${esc(d.n)}</b><span>${p?'Nível '+p.l+' · '+f(p.pr):'fora da lista de preços'}</span></div><button class="s x" data-dd=${i}>✕</button></div><table><tr><th></th><th>Charles</th><th>Lucas</th></tr><tr><td>Ida</td><td>${inp(i,'a',0)}</td><td>${inp(i,'a',1)}</td></tr><tr><td>Volta</td><td>${inp(i,'b',0)}</td><td>${inp(i,'b',1)}</td></tr><tr><td><b>Agregado</b></td><td><b>${r.ag[0]}</b></td><td><b>${r.ag[1]}</b></td></tr></table>${r.done&&r.ag[0]===r.ag[1]?`<div class=row style="margin-top:8px"><span>Pênaltis — vencedor:</span><select data-pen=${i}><option value="">—</option><option value=C ${d.pen==='C'?'selected':''}>Charles</option><option value=L ${d.pen==='L'?'selected':''}>Lucas</option></select></div>`:''}${r.w?`<p><b>Leva o jogador: ${NM[r.w]}</b></p>${p&&!tk?`<button class="${r.w==='C'?'c':'l'}" data-dw=${i}>Contratar p/ ${NM[r.w]} (${f(p.pr)})</button>`:tk?`<span class=mut>Já contratado por ${NM[tk.w]}.</span>`:''}`:''}</div>`}).join('')||'<div class=card><span class=mut>Nenhuma disputa aberta.</span></div>'}`}
+ else if(tab==='e'){el.innerHTML=['C','L'].map(k=>{const all=S.s.filter(s=>s.w===k);return`<h2>${NM[k]} — saldo ${f(bal(k,T))}</h2><div class=card>${all.length?all.map((s,i)=>`<div class=pl style="${s.sold?'opacity:.5':''}"><div class=lv style="background:${LC[s.lv]}">${s.lv==='BR'?'BR':s.lv}</div><div class=i><b>${esc(s.n)}</b><span>${GN[s.g]} · ${f(s.pr)}${s.sold?' · vendido (+'+f(s.pr/2)+')':''}</span></div>${s.sold?'':`<button class="s" data-sell=${S.s.indexOf(s)}>Vender 50%</button>`}<button class="s x" data-del=${S.s.indexOf(s)}>✕</button></div>`).join(''):'<span class=mut>Nenhuma contratação ainda.</span>'}</div>`}).join('')+'<span class=mut>✕ cancela a contratação e devolve o valor integral. “Vender” devolve 50%.</span>'}
+ else{el.innerHTML=`<h2>Regras em vigor</h2><div class=card><ul class=r><li><b>Vitória</b> +R$ 100.000 · <b>Empate</b> +R$ 40.000 (os dois) · <b>Derrota</b> R$ 0</li><li><b>Gol marcado</b> +R$ 10.000 (sem limite) · <b>Gol sofrido</b> −R$ 5.000 · <b>Clean sheet</b> +R$ 30.000 (vale p/ os dois no 0×0)</li><li><b>Goleada</b> (3+ gols de diferença): +R$ 60.000 / −R$ 40.000</li><li><b>Sequência vitoriosa</b>: +R$ 80.000 só na 3ª vitória seguida da temporada</li><li><b>Crise</b>: −R$ 50.000 só na 3ª derrota seguida</li><li>Temporada = 10 jogos · janela de transferências a cada 5 jogos · pênaltis = empate</li><li>Venda recupera 50% · sem roubo de jogadores · elenco 11–23 · máx. 5 estrangeiros · máx. 2 jogadores Nível A</li><li>Disputa pelo mesmo jogador: ida e volta (1×1). Se o agregado empatar, os pênaltis decidem quem leva o jogador, mas o jogo vale como empate no dinheiro. Cada jogo da disputa vale dinheiro e entra nas estatísticas, mas não na temporada.</li></ul></div>
+  <h2>Preços por nível</h2><div class=card><table><tr><th>Nível</th><th>Atac.</th><th>Meio</th><th>Def.</th><th>Gol.</th></tr>${[...LV].map((l,i)=>`<tr><td><b style="color:${LC[l]}">${l}</b></td>${['FW','MF','DF','GK'].map(g=>`<td>${PR[g][i].toLocaleString('pt-BR')}</td>`).join('')}</tr>`).join('')}</table><p class=mut>Brasileiros (Série A): atacante 1.200.000 · meio 900.000 · defensor 600.000 · goleiro 350.000.</p></div>
+  <h2>Backup dos dados</h2><div class=card><span class=mut>Os dados ficam salvos neste navegador. Copie o texto abaixo para guardar ou cole um backup e importe.</span><textarea id=bk></textarea><div class=row><button data-exp=1>Gerar backup</button><button data-imp=1>Importar</button></div></div>`}
+ $('#nv').innerHTML=[['p','🏆','Painel'],['j','⚽','Jogos'],['m','🛒','Mercado'],['d','⚔️','Disputas'],['e','👥','Elencos'],['r','📋','Regras']].map(t=>`<button data-t=${t[0]} class="${tab===t[0]?'on':''}"><i>${t[1]}</i>${t[2]}</button>`).join('')}
+function list(){const q=F.q.toLowerCase(),o=P.filter(p=>(!F.g||p.g===F.g)&&(!F.l||p.l===F.l)&&(!q||(p.n+p.c).toLowerCase().includes(q))).slice(0,60);
+ $('#ls').innerHTML=o.map(p=>{const h=S.s.find(s=>s.pid===p.i&&!s.sold);return`<div class=pl><div class=lv style="background:${LC[p.l]}">${p.l}</div><div class=i><b>${p.n}</b><span>${p.c} · ${p.p} · ${AT[p.g].map((a,i)=>a+' '+p.at[i]).join(' · ')}</span></div><div class=o>${p.o}</div>${h?`<span class=tag>${NM[h.w]}</span>`:`<div style="text-align:right"><div class=p>${f(p.pr)}</div><button class="s c" data-b=${p.i} data-w=C>C</button> <button class="s l" data-b=${p.i} data-w=L>L</button></div>`}</div>`}).join('')||'<span class=mut>Nenhum jogador encontrado.</span>'}
+function buy(w,rec){const{T}=calc();if(act(w).filter(s=>s.lv==='A').length>=2&&rec.lv==='A'&&!confirm('Já são 2 jogadores Nível A. Contratar mesmo assim?'))return;
+ if(rec.lv!=='BR'&&act(w).filter(s=>s.lv!=='BR').length>=5&&!confirm('Limite de 5 estrangeiros atingido. Contratar mesmo assim?'))return;
+ if(bal(w,T)<rec.pr&&!confirm('Saldo insuficiente ('+f(bal(w,T))+'). Contratar mesmo assim?'))return;
+ S.s.push(Object.assign({w},rec));save();view()}
+document.addEventListener('click',e=>{const d=e.target.closest('[data-t],[data-b],[data-br],[data-sell],[data-del],[data-exp],[data-imp],[data-nd],[data-dd],[data-dw]');if(!d)return;const D=d.dataset;
+ if(D.t){tab=D.t;view();scrollTo(0,0)}
+ else if(D.b!=null){const p=P[+D.b];buy(D.w,{pid:p.i,n:p.n,g:p.g,lv:p.l,pr:p.pr})}
+ else if(D.br){const n=$('#bn').value.trim(),g=$('#bg').value;if(!n)return alert('Digite o nome do jogador.');buy(D.br,{pid:null,n,g,lv:'BR',pr:BR[g]})}
+ else if(D.sell!=null){S.s[+D.sell].sold=true;save();view()}
+ else if(D.del!=null){if(confirm('Cancelar esta contratação e devolver o valor?')){S.s.splice(+D.del,1);save();view()}}
+ else if(D.nd){const n=$('#dn').value.trim();if(!n)return;const p=P.find(x=>x.n.toLowerCase()===n.toLowerCase());S.d=S.d||[];S.d.push({n:p?p.n:n,pid:p?p.i:null,a:[null,null],b:[null,null],pen:''});save();view()}
+ else if(D.dd!=null){if(confirm('Excluir esta disputa?')){S.d.splice(+D.dd,1);save();view()}}
+ else if(D.dw!=null){const d=S.d[+D.dw],r=dres(d),p=P[d.pid];if(r.w&&p)buy(r.w,{pid:p.i,n:p.n,g:p.g,lv:p.l,pr:p.pr})}
+ else if(D.exp){$('#bk').value=JSON.stringify(S)}
+ else if(D.imp){try{const x=JSON.parse($('#bk').value);if(!x.g||!x.s)throw 0;S=Object.assign({adj:{C:0,L:0}},x);save();view();alert('Dados importados.')}catch(_){alert('Backup inválido.')}}});
+document.addEventListener('change',e=>{const t=e.target;
+ if(t.dataset.g!=null){const i=+t.dataset.g;S.g[i]=S.g[i]||[null,null];S.g[i][+t.dataset.s]=t.value===''?null:Math.max(0,parseInt(t.value));for(let k=0;k<i;k++)S.g[k]=S.g[k]||[null,null];save();view()}
+ else if(t.dataset.dl!=null){const d=S.d[+t.dataset.dl],g=t.dataset.lg;d[g]=d[g]||[null,null];d[g][+t.dataset.s]=t.value===''?null:Math.max(0,parseInt(t.value));save();view()}
+ else if(t.dataset.pen!=null){S.d[+t.dataset.pen].pen=t.value;save();view()}
+ else if(t.dataset.adj){S.adj[t.dataset.adj]=+t.value||0;save();view()}
+ else if(t.id==='mg'||t.id==='ml'){F.g=$('#mg').value;F.l=$('#ml').value;list()}});
+document.addEventListener('input',e=>{if(e.target.id==='mq'){F.q=e.target.value;list()}});
+view();
+if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}))}
+</script></body></html>
